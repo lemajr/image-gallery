@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Gallery with Unsplash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">Photo Gallery</h1>
+        </div>
+    </nav>
+
+    <div class="flex justify-center items-center min-h-screen text-xs bg-teal-100 sm:text-lg">
+        <div class="box-border w-60 bg-white rounded-xl shadow-2xl p-4 sm:w-full sm:p-20">
+          <div class="flex flex-col items-center text-center space-x-4 space-y-4 mb-10  sm:flex-row sm:space-y-0 sm:justify-end ">
+            <div class="group cursor-pointer">
+              <a>Vector</a>
+              <div class="border-b-2 border-black mx-2 mt-2 opacity-0 duration-300 group-hover:opacity-100"></div>
+            </div>
+            <div class="group cursor-pointer">
+              <a>illustrations</a>
+              <div class="border-b-2 border-black mx-2 mt-2 opacity-0 duration-300 group-hover:opacity-100"></div>
+            </div>
+            <div class="group cursor-pointer">
+              <a>Images</a>
+              <div class="border-b-2 border-black mx-2 mt-2 opacity-0 duration-300 group-hover:opacity-100"></div>
+            </div>
+            <div class="group cursor-pointer">
+              <a>Icons</a>
+              <div class="border-b-2 border-black mx-2 mt-2 opacity-0 duration-300 group-hover:opacity-100"></div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-between space-y-3 sm:flex-row">
+            <div class="flex justify-between border-b-2">
+              <input type="text" placeholder="Search" class="focus:outline-none px-4 py-1">
+              <button class=" text-slate-300"><i class="fa-solid fa-magnifying-glass duration-300 hover:scale-110"></i></button>
+            </div>
+            <button class="bg-black text-white py-2 px-8 outline outline-1 rounded-md duration-300 hover:bg-white  hover:text-black">Upload</button>
+          </div>
+          <div class="card-wrap mt-8 gap-4 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5">
+            <div class=" group relative">
+              <img src="https://images.pexels.com/photos/264905/pexels-photo-264905.jpeg?auto=compress&cs=tinysrgb&w=600" class="object-cover">
+              <div class="absolute bottom-0 flex justify-between text-white w-full p-2 bg-black opacity-0 duration-300 group-hover:opacity-65">
+                <div>
+                  <p>Abstract Painting</p>
+                  <p class="text-[0.6rem]">245 likes - 35 Shares</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative">
+              <img src="https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&w=600" class="object-cover">
+              <div class="absolute bottom-0 flex justify-between text-white w-full p-2 bg-black opacity-0 duration-300 group-hover:opacity-65">
+                <div>
+                  <p>Abstract Painting</p>
+                  <p class="text-[0.6rem]">245 likes - 35 Shares</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative">
+              <img src="https://images.pexels.com/photos/1333304/pexels-photo-1333304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="object-cover">
+              <div class="absolute bottom-0 flex justify-between text-white w-full p-2 bg-black opacity-0 duration-300 group-hover:opacity-65">
+                <div>
+                  <p>Abstract Painting</p>
+                  <p class="text-[0.6rem]">245 likes - 35 Shares</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative">
+              <img src="https://images.pexels.com/photos/45178/monk-hands-faith-person-45178.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="object-cover">
+              <div class="absolute bottom-0 flex justify-between text-white w-full p-2 bg-black opacity-0 duration-300 group-hover:opacity-65">
+                <div>
+                  <p>Abstract Painting</p>
+                  <p class="text-[0.6rem]">245 likes - 35 Shares</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative">
+              <img src="https://images.pexels.com/photos/6896333/pexels-photo-6896333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="object-cover">
+              <div class="absolute bottom-0 flex justify-between text-white w-full p-2 bg-black opacity-0 duration-300 group-hover:opacity-65">
+                <div>
+                  <p>Abstract Painting</p>
+                  <p class="text-[0.6rem]">245 likes - 35 Shares</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative">
+              <img src="https://images.pexels.com/photos/7265994/pexels-photo-7265994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="object-cover">
+              <div class="absolute bottom-0 flex justify-between text-white w-full p-2 bg-black opacity-0 duration-300 group-hover:opacity-65">
+                <div>
+                  <p>Abstract Painting</p>
+                  <p class="text-[0.6rem]">245 likes - 35 Shares</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Footer -->
+    <footer class="bg-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-700">© 2024 Your Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
