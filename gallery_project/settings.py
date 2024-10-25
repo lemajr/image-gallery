@@ -70,8 +70,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'gallery_project.wsgi.application'
-ASGI_APPLICATION = 'gallery_project.asgi.application'
+WSGI_APPLICATION = 'gallery_project.wsgi.application'
 
 
 
